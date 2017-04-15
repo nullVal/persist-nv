@@ -1,4 +1,6 @@
 -- Server
-
-logMessage("Persist-nv loading.")
-logMessage("Persist-nv loaded.")
+AddEventHandler('onResourceStart', function(resource)
+	if resource == 'persist-nv' then
+		logMessage("Persist-nv loaded.")
+	end
+end)
